@@ -88,7 +88,7 @@
             <p>{{ post.text }}</p>
             <div class="news_d_footer flex-column flex-sm-row">
               {% if post.likes_amount > 2 %}
-                <a href="#"><span class="align-middle mr-2"><i class="ti-heart"></i></span>Lily and {{ post.likes_amount|add:"-1" }} people like this</a>
+                <a href="#"><span class="align-middle mr-2"><i class="ti-heart"; style="color:#FF0000";></i></span>Lily and {{ post.likes_amount|add:"-1" }} people like this</a>
               {% elif post.likes_amount == 2 %}
                 <a href="#"><span class="align-middle mr-2"><i class="ti-heart"></i></span>Lily and {{ post.likes_amount|add:"-1" }} people like this</a>
               {% elif post.likes_amount == 1 %}
